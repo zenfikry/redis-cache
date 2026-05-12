@@ -27,7 +27,7 @@ public class Category {
     private Category parent;
 
     @OneToMany(mappedBy = "parent", fetch = FetchType.LAZY)
-    private List<Category> child;
+    private List<Category> children;
 
     @Override
     public boolean equals(Object o) {
